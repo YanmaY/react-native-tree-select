@@ -9,7 +9,9 @@ const styles = StyleSheet.create({
   },
   textName: {
     fontSize: 14,
-    marginLeft: 5
+    lineHeight: 18,
+    marginLeft: 5,
+    marginBottom: 5
   },
   contentContainer: {
     paddingBottom: 20,
@@ -253,7 +255,7 @@ export default class TreeSelect extends Component {
             flexDirection: 'row',
             backgroundColor: isCurrentNode ? selectedBackgroudColor || '#FFEDCE' : backgroudColor || '#fff',
             marginBottom: 2,
-            height: 30,
+            minHeight: 30,
             alignItems: 'center'
           }}
         >
